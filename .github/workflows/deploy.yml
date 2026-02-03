@@ -32,9 +32,6 @@ jobs:
       - name: Create SPA fallback
         run: cp dist/index.html dist/404.html
 
-      - name: Add CNAME
-        run: echo "capital-wizard.com" > dist/CNAME
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
